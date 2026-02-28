@@ -1,0 +1,85 @@
+/* Overall container */
+.dashboard-container {
+  padding: 40px 60px;
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* Title styling */
+.dashboard-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Layout: left buttons + right image */
+.dashboard-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* makes it responsive */
+}
+
+/* Left side */
+.dashboard-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 260px;
+}
+
+/* Right side */
+.dashboard-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image styling */
+.student-image {
+  width: 350px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Buttons */
+.dashboard-box {
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  padding: 18px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.dashboard-box:hover {
+  background-color: #218838;
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dashboard-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dashboard-left {
+    align-items: center;
+  }
+
+  .student-image {
+    width: 280px;
+    margin-top: 20px;
+  }
+}
